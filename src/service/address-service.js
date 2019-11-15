@@ -34,6 +34,7 @@ var _address = {
         _mm.request({
             url     : _mm.getServerUrl('/shipping/update.do'),
             data    : addressInfo,
+            method  : "post",
             success : resolve,
             error   : reject
         });
